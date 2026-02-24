@@ -17,4 +17,3 @@ for r in sorted(reactions, key=lambda x: x["volatility"], reverse=True)[:5]:
     print("\nASSET:", r["asset"])
     print("VOLATILITY REACTION:", round(r["volatility"], 3), "%")
     print("HEADLINE:", r["headline"])
-
