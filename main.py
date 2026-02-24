@@ -1,16 +1,20 @@
-# This is a sample Python script.
+from news import get_latest_news
+from event_analyzer import analyze_event_impact
 
-# Press Ctrl+F5 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+news = get_latest_news()
+reactions = analyze_event_impact(news)
 
+if not news:
+    print("No news returned.")
+else:
+    for article in news[:5]:
+        print("-" * 50)
+        print("Title:", article["title"])
+        print("Published:", article["published_at"])
+        print("Currencies:", article["currencies"])
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press F9 to toggle the breakpoint.
+for r in sorted(reactions, key=lambda x: x["volatility"], reverse=True)[:5]:
+    print("\nASSET:", r["asset"])
+    print("VOLATILITY REACTION:", round(r["volatility"], 3), "%")
+    print("HEADLINE:", r["headline"])
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
