@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70b019e7-fa0c-43f6-9736-f6177c0b48fe" name="Changes" comment="Creating event_analyzer.py and price_reaction files">
-      <change afterPath="$PROJECT_DIR$/api/cryptopanic.py" afterDir="false" />
+    <list default="true" id="70b019e7-fa0c-43f6-9736-f6177c0b48fe" name="Changes" comment="adding files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event_analyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/event_analyzer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/price_reaction.py" beforeDir="false" afterPath="$PROJECT_DIR$/price_reaction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/news.py" beforeDir="false" afterPath="$PROJECT_DIR$/news.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +57,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.CommitDialog&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.main (1)">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="news_engine" />
       <option name="ENV_FILES" value="" />
@@ -190,7 +187,31 @@
       <option name="project" value="LOCAL" />
       <updated>1771789971314</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Creating event_analyzer.py and price_reaction files">
+      <option name="closed" value="true" />
+      <created>1771959487396</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1771959487396</updated>
+    </task>
+    <task id="LOCAL-00007" summary="adding files">
+      <option name="closed" value="true" />
+      <created>1771959512188</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1771959512188</updated>
+    </task>
+    <task id="LOCAL-00008" summary="adding files">
+      <option name="closed" value="true" />
+      <created>1771959564757</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1771959564757</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -235,6 +256,7 @@
     <MESSAGE value="First Commit" />
     <MESSAGE value="Creating news.py file" />
     <MESSAGE value="Creating event_analyzer.py and price_reaction files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creating event_analyzer.py and price_reaction files" />
+    <MESSAGE value="adding files" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding files" />
   </component>
 </project>
