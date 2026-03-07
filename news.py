@@ -3,6 +3,7 @@ import os
 
 API_KEY = os.getenv("CRYPTOPANIC_KEY")
 
+
 def get_latest_news():
     url = "https://cryptopanic.com/api/developer/v2/posts/"
 
@@ -31,6 +32,7 @@ def get_latest_news():
             "published_at": item.get("published_at"),
             "source": item.get("source", {}).get("title"),
             "votes": item.get("votes"),
+            "currencies": [c["code"] for c in item.get("currencies", [])]
         })
 
     return news
