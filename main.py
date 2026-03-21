@@ -2,6 +2,7 @@ from news import get_latest_news
 from event_analyzer import analyze_event_impact
 from coin_detector import detect_coins
 from sentiment_analyzer import analyze_sentiment
+from sentiment_aggregator import aggregate_sentiment
 
 news = get_latest_news()
 reactions = analyze_event_impact(news)
@@ -29,3 +30,14 @@ for r in sorted(reactions, key=lambda x: x["volatility"], reverse=True)[:5]:
 
 import nltk
 nltk.download('vader_lexicon')
+
+signals = aggregate_sentiment(news, detect_coins, analyze_sentiment)
+
+print("\n===== MARKET SENTIMENT =====")
+
+for coin, data in signals.items():
+
+    print(f"\n{coin}")
+    print("Articles:", data["articles"])
+    print("Average Sentiment:", round(data["average_sentiment"], 3))
+    print("Signal:", data["signal"])    
