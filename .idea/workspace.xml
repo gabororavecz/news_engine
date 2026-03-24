@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70b019e7-fa0c-43f6-9736-f6177c0b48fe" name="Changes" comment="adding coin_detector.py  file">
-      <change afterPath="$PROJECT_DIR$/coins_config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sentiment_aggregator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coin_detector.py" beforeDir="false" afterPath="$PROJECT_DIR$/coin_detector.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="70b019e7-fa0c-43f6-9736-f6177c0b48fe" name="Changes" comment="update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -252,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773605617309</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="update">
+      <option name="closed" value="true" />
+      <created>1774119340743</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1774119340743</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -299,6 +301,7 @@
     <MESSAGE value="Creating event_analyzer.py and price_reaction files" />
     <MESSAGE value="adding files" />
     <MESSAGE value="adding coin_detector.py  file" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding coin_detector.py  file" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>
