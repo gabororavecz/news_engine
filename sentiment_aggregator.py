@@ -1,11 +1,26 @@
+from datetime import datetime, timezone
+
 def aggregate_sentiment(news, detect_coins, analyze_sentiment):
 
     scores = {}
+
+    now = datetime.now(timezone.utc)
 
     for article in news:
 
         coins = detect_coins(article["title"])
         sentiment, score = analyze_sentiment(article["title"])
+
+        # Parse published time
+        published_time = datetime.fromisoformat(
+            article["published_at"].replace("Z", "+00:00")
+        )
+
+        # Time difference in minutes
+        minutes_ago = (now - published_time).total_seconds() / 60
+
+        # Weight: more recent = higher weight
+        weight = max(0.1, 1 / (1 + minutes_ago / 60))
 
         for coin in coins:
 
