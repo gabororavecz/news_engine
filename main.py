@@ -3,6 +3,8 @@ from event_analyzer import analyze_event_impact
 from coin_detector import detect_coins
 from sentiment_analyzer import analyze_sentiment
 from sentiment_aggregator import aggregate_sentiment
+from signal_tracker import load_previous_signals, save_signals, detect_changes
+from telegram_alert import send_telegram_message
 
 news = get_latest_news()
 reactions = analyze_event_impact(news)
@@ -40,4 +42,20 @@ for coin, data in signals.items():
     print(f"\n{coin}")
     print("Articles:", data["articles"])
     print("Average Sentiment:", round(data["average_sentiment"], 3))
-    print("Signal:", data["signal"])    
+    print("Signal:", data["signal"])
+
+previous = load_previous_signals()
+
+alerts = detect_changes(signals, previous)
+
+print("\n===== ALERTS =====")
+
+if alerts:
+    for alert in alerts:
+        print(alert)
+else:
+    print("No signal changes.")
+
+# Save current signals for next run
+simple_signals = {coin: data["signal"] for coin, data in signals.items()}
+save_signals(simple_signals)
