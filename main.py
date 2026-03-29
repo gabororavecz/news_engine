@@ -53,6 +53,7 @@ print("\n===== ALERTS =====")
 if alerts:
     for alert in alerts:
         print(alert)
+        send_telegram_message(alert)
 else:
     print("No signal changes.")
 

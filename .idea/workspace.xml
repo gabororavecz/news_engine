@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70b019e7-fa0c-43f6-9736-f6177c0b48fe" name="Changes" comment="info file">
-      <change afterPath="$PROJECT_DIR$/signal_tracker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sentiment_aggregator.py" beforeDir="false" afterPath="$PROJECT_DIR$/sentiment_aggregator.py" afterDir="false" />
-    </list>
+    <list default="true" id="70b019e7-fa0c-43f6-9736-f6177c0b48fe" name="Changes" comment="Adding Source Weighting&#10;Adding Signal Change Alerts&#10;Adding Telegram Alerts&#10;Combine with Trading Scanner" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -275,7 +270,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774558505170</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Adding Source Weighting&#10;Adding Signal Change Alerts&#10;Adding Telegram Alerts&#10;Combine with Trading Scanner">
+      <option name="closed" value="true" />
+      <created>1774791473517</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1774791473517</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -324,6 +327,7 @@
     <MESSAGE value="adding coin_detector.py  file" />
     <MESSAGE value="update" />
     <MESSAGE value="info file" />
-    <option name="LAST_COMMIT_MESSAGE" value="info file" />
+    <MESSAGE value="Adding Source Weighting&#10;Adding Signal Change Alerts&#10;Adding Telegram Alerts&#10;Combine with Trading Scanner" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Source Weighting&#10;Adding Signal Change Alerts&#10;Adding Telegram Alerts&#10;Combine with Trading Scanner" />
   </component>
 </project>
