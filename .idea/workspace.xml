@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70b019e7-fa0c-43f6-9736-f6177c0b48fe" name="Changes" comment="Adding Source Weighting&#10;Adding Signal Change Alerts&#10;Adding Telegram Alerts&#10;Combine with Trading Scanner" />
+    <list default="true" id="70b019e7-fa0c-43f6-9736-f6177c0b48fe" name="Changes" comment="Adding Source Weighting&#10;Adding Signal Change Alerts&#10;Adding Telegram Alerts&#10;Combine with Trading Scanner">
+      <change afterPath="$PROJECT_DIR$/combined_signals.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/derivatives.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/indicators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scanner.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scanner_runner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,6 +63,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.CommitDialog&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gabor\PycharmProjects\News_Engine\news_engine" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.main">
     <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="news_engine" />

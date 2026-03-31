@@ -5,6 +5,8 @@ from sentiment_analyzer import analyze_sentiment
 from sentiment_aggregator import aggregate_sentiment
 from signal_tracker import load_previous_signals, save_signals, detect_changes
 from telegram_alert import send_telegram_message
+from combined_signals import generate_combined_signals
+from scanner_runner import run_scanner
 
 news = get_latest_news()
 reactions = analyze_event_impact(news)
@@ -60,3 +62,20 @@ else:
 # Save current signals for next run
 simple_signals = {coin: data["signal"] for coin, data in signals.items()}
 save_signals(simple_signals)
+
+trading_data = run_scanner()
+
+print("\nTRADING DATA:")
+print(trading_data)
+
+combined = generate_combined_signals(signals, trading_data)
+
+print("\n===== FINAL SIGNALS =====")
+
+for coin, data in combined.items():
+
+    print(f"\n{coin}")
+    print("Sentiment:", data["sentiment"])
+    print("Trade Score:", data["trade_score"])
+    print("Regime:", data["regime"])
+    print("FINAL SIGNAL:", data["final_signal"])
